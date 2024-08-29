@@ -1,0 +1,187 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.montserrat-max {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+    font-family: "Montserrat", system-ui;
+    background-color:goldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    
+}
+nav {
+    display: flex;
+    gap: 200px;
+    width: 100vw;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+nav>button {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(235, 220, 220);
+    font-style:italic;
+    font-size: 1.1rem;
+
+    
+}
+img.restaurant {
+    max-width: 60%;
+    height: auto;
+
+}
+
+div#content {
+    width: 80%; 
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.image-header {
+    display: flex;
+    background-color: rgba(250, 235, 215, 0.308);
+    line-height: 1.7rem;
+}
+div.image-text{
+    width: 100%;
+}
+div.menu {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background-color:white;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 5px
+}
+div.dish {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 0px;
+    gap: 10px;
+    padding: 20px 0;
+}
+div.dish>p {
+    padding: 0px;
+}
+
+div.dish>title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+div.dish>p.description {
+    font-size: 1.2rem;
+    grid-column: 2/3
+}
+div.dish>img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: white;
+    border-radius: 15px;
+}
+div.about {
+    border: 2px black solid;
+    text-align: center;
+    line-height: 1.6rem;
+    padding: 0 20px;
+    width: 30%;
+    background-color: antiquewhite
+}
+div.about p.header:first-child{
+    border-bottom: none;
+}
+div.about>p.header {
+    padding-bottom: 0px;
+    font-size: 1.7rem;
+    border-bottom: black 2px solid;
+}
+h1 {
+    margin: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+p {
+    font-size: 1.5rem;
+    padding: 30px;
+
+}
+p.head{
+    font-weight: 500;
+}
+button {
+    width: 120px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    
+}
+button.content-menu {
+    width: 200px;
+    height: 50px;
+    font-size: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}

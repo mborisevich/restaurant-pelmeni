@@ -9,7 +9,7 @@ import kvas from "./kvas.png"
 import varenyki from "./varenyki.jpg"
 import pelmeni from "./pelmeni.jpeg"
 console.log("index.js has been bundled!");
-content = document.querySelector("div#content");
+const content = document.querySelector("div#content");
 document.addEventListener("click", (event) => {
     let targetId = event.target.id;
     console.log(targetId);

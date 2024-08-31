@@ -12,7 +12,7 @@ export {loadMenu}
 function loadMenu(){
     //Create header element with image text
     content = document.querySelector("div#content")
-    const headerText = document.createElement("p");
+    const headerText = document.createElement("h1");
     headerText.textContent = "Menu"
     
     const menuContainer = document.createElement("div");

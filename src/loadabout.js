@@ -35,6 +35,7 @@ function loadAbout(){
     }
 
     function renderPage(){
+        append(content, Elements.pageTitle);
 
         append(Elements.aboutContainer, Elements.restaurantName, Elements.adressHeader, Elements.adressInfo, Elements.phoneHeader, Elements.phoneHeader,
             Elements.phoneInfo, Elements.aboutText
